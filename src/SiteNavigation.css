@@ -1,0 +1,33 @@
+/**
+ * Site Navigation
+ */
+.site-navigation {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	/* todo sort this out with z-indeces */
+	z-index: 5;
+}
+
+.site-navigation .nav-link,
+.site-navigation .dropdown-item {
+	padding: 16px 8px 0px 8px; 
+	color: #EF4123;
+	background-color: yellow;
+	background-clip: content-box;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.site-navigation .nav-link:hover,
+.site-navigation .nav-link:focus,
+.site-navigation .dropdown-item:hover,
+.site-navigation .dropdown-item:focus {
+	color: #0000fb;
+}
+
+.site-navigation .nav-link:before {
+	content: '/ ';
+}
