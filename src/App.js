@@ -1,10 +1,12 @@
 import React from 'react';
 
 import SiteNavigation from './SiteNavigation'
+import About from './About'
 
 function App() {
-  return (<div class="site container">
+  return (<div className="site container">
     <SiteNavigation/>
+    <About/>
   </div>)
 }
 

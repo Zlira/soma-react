@@ -6,7 +6,7 @@
 	position: sticky;
 	top: 0px;
 	/* todo sort this out with z-indeces */
-	z-index: 5;
+	z-index: 1;
 }
 
 .site-navigation .nav-link,

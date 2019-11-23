@@ -3,7 +3,7 @@ import './SiteNavigation.css'
 
 function NavLink({href, text}) {
     return (
-	  <li className="nav-item"><a class="nav-link" href={href}>{text}</a></li>
+	  <li className="nav-item"><a className="nav-link" href={href}>{text}</a></li>
     )
 }
 
