@@ -1,0 +1,77 @@
+.images .image {
+	display: block;
+    position: absolute;
+    animation: blink-animation 4s steps(4, start) infinite;
+}
+
+@keyframes blink-animation {
+  from {
+    visibility: visible;
+  }
+  20% {visibility: hidden;}
+  to {
+    visibility: hidden;
+  }
+}
+
+.images .image-1 {
+	top: 15%;
+	left: 56%;
+}
+
+.images .image-1 img {
+	width: 154px;
+}
+
+.images .image-2 {
+	top: 56%;
+    left: 84%;
+    animation-delay: -1s;
+}
+
+.images .image-2 img {
+	width: 79px;
+}
+
+.images .image-3 {
+	top: 12%;
+	left: 78%;
+    animation-delay: -2s;
+}
+
+.images .image-3 img {
+	width: 188px;
+}
+
+.images .image-4 {
+	top: 35%;
+	left: 92%;
+    animation-delay: -3s;
+}
+
+.images .image-4 img {
+	width: 104px;
+}
+
+.image img {
+	width: 256px;
+}
+
+@media only screen and (max-width: 600px) {
+    .images .image-1 {
+        top: 4%;
+        left: 10%;
+    }
+    .images .image-2 {
+        top: 56%;
+        left: 78%;
+    }
+    .images .image-3 {
+        top: 12%;
+        left: 56%;
+    }
+    .images .image-4 {
+        top: 35%;
+        left: 72%;
+    }
+}

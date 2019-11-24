@@ -1,28 +1,11 @@
 import React from 'react'
-import bush from './about_imgs/soma_bush.png'
-import cracks from './about_imgs/soma_cracks.png'
-import spring from './about_imgs/soma_spring.png'
-import sticks from './about_imgs/soma_sticks.png'
 
+import BackgroundImages from './BackgroundImgs/BackgroundImgs'
 import {LetterS, LetterO, LetterM, LetterA} from './soma_letters/SomaLetters.js'
 
 import comeImg from './button_imgs/come.png'
 import donateImg from './button_imgs/donate.png'
-
-
-function Image({index, path}) {
-    return <div id={`image-${index}`} className="image">
-        <img src={path} alt=""/>
-    </div>
-}
-
-
-function BackgroundImages() {
-    const images = [bush, cracks, spring, sticks]
-    return (<div className="images">
-      {images.map((path, index) => <Image index={index + 1} path={path} key={index}/>)}
-    </div>)
-}
+import './about.css'
 
 function SiteHeader() {
     return <header className="site-header">
@@ -82,8 +65,12 @@ function Marquee() {
         </>
       )
     )
-    return <marquee className='marquee'>{eventELements}</marquee>
+    return <div className='marquee'>
+        <div className='repeat'>{eventELements}</div>
+        <div className='repeat'>{eventELements}</div>
+    </div>
 }
+
 
 export default function About() {
     return (<section id="home" className="entry mb-5">
