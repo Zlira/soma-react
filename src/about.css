@@ -1,0 +1,135 @@
+/**
+ * Home
+ */
+#home {
+	height: 100vh;
+    position: relative;
+    /* todo this is a not very smart decision to fix moving menu outside 'home' */
+    top: -34px;
+}
+
+
+/**
+ * Site Title
+ */
+.site-title svg {
+	width: 96px;
+}
+
+.site-title span {
+	position: absolute;
+}
+
+.site-title span:nth-child(1) {
+	top: -32px;
+	left: 0;
+}
+
+.site-title span:nth-child(2) {
+	top: 36%;
+	left: 28%;
+}
+
+.site-title span:nth-child(3) {
+	top: 43%;
+	left: 35%;
+}
+
+.site-title span:nth-child(4) {
+	top: 58%;
+	left: 56%;
+}
+
+/**
+ * Site description
+ */
+.site-description {
+	position: absolute;
+	bottom: 25%;
+    color: #0000fb;
+    max-width: 430px;
+    padding-right: 10px;
+}
+
+.site-description p {
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	line-height: 1.3;
+}
+
+/**
+ * Images
+ */
+.images .image {
+	display: block;
+	position: absolute;
+}
+
+.images .image:nth-child(1) {
+	top: 15%;
+	left: 56%;
+}
+
+.images .image:nth-child(1) img {
+	width: 154px;
+}
+
+.images .image:nth-child(2) {
+	top: 56%;
+	left: 84%;
+}
+
+.images .image:nth-child(2) img {
+	width: 79px;
+}
+
+.images .image:nth-child(3) {
+	top: 12%;
+	left: 78%;
+}
+
+.images .image:nth-child(3) img {
+	width: 188px;
+}
+
+.image:nth-child(4) {
+	top: 35%;
+	left: 92%;
+}
+
+.images .image:nth-child(4) img {
+	width: 104px;
+}
+
+.image img {
+	width: 256px;
+}
+
+/**
+ * Marquee
+ */
+.marquee {
+	position: absolute !important;
+	bottom: 0;
+	font-size: 24px;
+	font-weight: bold;
+    letter-spacing: 5px;
+    width: 100%; 
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee .repeat {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
