@@ -59,10 +59,10 @@ function Marquee() {
     const colors = ["#f0f", "#0f0", "#f00", "#00f"]
     const eventELements = events.map(
       (event, index) => (
-        <>
+        <React.Fragment key={index}>
           <span style={{color: colors[index % 4]}}>{event}</span>
           <span style={{color: colors[(index + 2) % 4]}}>◆</span>
-        </>
+        </React.Fragment>
       )
     )
     return <div className='marquee'>
