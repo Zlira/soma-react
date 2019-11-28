@@ -1,3 +1,9 @@
+ .card-holder {
+	position: relative;
+	width: 100%;
+	border: thick solid blue;
+ }
+
 .announcement-card {
 	position: absolute;
 	background: #fff;
@@ -5,7 +11,7 @@
 	margin: 5px;
 	padding: 10px;
 	padding-left: 30px;
-	max-width: 750px;
+	/* max-width: 750px; */
 	white-space: nowrap;
 }
 

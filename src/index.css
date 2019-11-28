@@ -102,10 +102,6 @@ p:not( .calendar__date ) {
  * Entry content
  */
 
- .entry-content {
-	position: relative;
- }
-
 .entry-content p > a {
 	color: #EF4123;
 	text-decoration: underline;
