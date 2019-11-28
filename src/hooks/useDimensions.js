@@ -1,4 +1,4 @@
-import React, {useRef, useState, useLayoutEffect} from 'react'
+import {useRef, useState, useLayoutEffect} from 'react'
 
 
 export default function useDimensions() {
@@ -9,7 +9,7 @@ export default function useDimensions() {
         () => {
             setDimensions(ref.current.getBoundingClientRect().toJSON())
         },
-        [ref.current]
+        []
     )
 
     return [ref, dimensions]

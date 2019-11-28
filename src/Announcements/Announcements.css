@@ -1,7 +1,8 @@
  .card-holder {
 	position: relative;
 	width: 100%;
-	border: thick solid blue;
+	/* border: thick solid blue; */
+	overflow: hidden;
  }
 
 .announcement-card {
@@ -11,8 +12,8 @@
 	margin: 5px;
 	padding: 10px;
 	padding-left: 30px;
-	/* max-width: 750px; */
 	white-space: nowrap;
+	transition: left .2s linear;
 }
 
 .announcement-card__title {
