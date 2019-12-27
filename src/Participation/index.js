@@ -26,7 +26,7 @@ function Description() {
 function Participation(props) {
   const cards = cardsInfo.map((el, i) => <Card {...el} key={i} />);
   return (
-    <section className="entry mb-5 participation">
+    <section id="participation" className="entry mb-5 participation">
       <header className="entry-header">
         <h2 className="entry-title">Участь</h2>
       </header>

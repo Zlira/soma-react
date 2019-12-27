@@ -1,7 +1,7 @@
 /**
  * Font
  */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap&subset=cyrillic");
 
 ::selection {
   background: rgba(0, 0, 251, 0.99);
