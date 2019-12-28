@@ -4,6 +4,7 @@ import SiteNavigation from "./SiteNavigation";
 import About from "./About";
 import Announcements from "./Announcements/Announcements";
 import Participation from "./Participation";
+import Contacts from "./Contacts";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Announcements />
       <Participation />
+      <Contacts />
     </div>
   );
 }
