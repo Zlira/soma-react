@@ -31,7 +31,7 @@ function SiteNavigation() {
     { href: "#announcements", text: "анонси" },
     // { href: "#workshop", text: "майстерні" },
     { href: "#participation", text: "участь" },
-    { href: "#schedule", text: "розклад" },
+    { href: "#calendar", text: "розклад" },
     // { href: "#masters", text: "майстри_ні" },
     {
       href: "#contacts",
