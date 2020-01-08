@@ -29,12 +29,6 @@ a:focus {
   letter-spacing: 8px;
 }
 
-/* p:not(.calendar__event-time),
-p:not(.calendar__date) {
-  font-weight: normal;
-  letter-spacing: 1px;
-  line-height: 1.5; */
-
 p {
   font-weight: normal;
   letter-spacing: 1px;

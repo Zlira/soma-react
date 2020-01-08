@@ -1,49 +1,35 @@
 import React, { useState, useEffect } from "react";
 import YAML from "yaml";
 import Carousel from "react-bootstrap/Carousel";
-import CarouselItem from "react-bootstrap/CarouselItem";
+import "./Announcements.css";
 
-function Announcement({
-  name,
-  text,
-  image,
-  linkPath,
-  linkName,
-  color,
-  textColor
-}) {
-  const style = {
-    backgroundColor: color,
-    color: textColor
-  };
+function Announcement({ name, text, image, linkPath, linkName }) {
   return (
-    <div className="row announcement-card" style={style}>
-      <h3 className="title announcement-card__title">{name}</h3>
-      <div className="col-md-7 announcement-card__img">
+    <div className="announcement-card">
+      <div className=" announcement-card__img">
         <img
           src={process.env.PUBLIC_URL + "/announcemets/imgs/" + image}
-          alt={{ name }}
+          alt={name}
           className="d-block w-100 mb-5"
         />
-
-        <p className="announcement-card__link">
-          <a
-            href={linkPath}
-            style={{ color: textColor }}
-            className="announcement-card__link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {linkName}
-          </a>
-        </p>
+        <h3 className="title mb-5">{name}</h3>
       </div>
-      <div className="col-md-5">
+      <div>
         <p
           className="announcement-card__text"
           style={{ whiteSpace: "pre-wrap" }}
         >
           {text}
+        </p>
+        <p className="announcement-card__link">
+          <a
+            href={linkPath}
+            className="btn btn-outline-primary mt-4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {linkName}
+          </a>
         </p>
       </div>
     </div>
@@ -79,7 +65,7 @@ export default function Announcements() {
         <h2 className="entry-title">Анонси</h2>
         <div className="entry-content">
           <div className="card-holder">
-            <Carousel>{announcementElems}</Carousel>
+            <Carousel indicators={false}>{announcementElems}</Carousel>
           </div>
         </div>
       </div>

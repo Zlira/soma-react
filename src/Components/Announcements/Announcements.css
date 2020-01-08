@@ -1,0 +1,20 @@
+.carousel-control-next-icon {
+  background-image: url("./imgs/next.png");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("./imgs/prev.png");
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  position: absolute;
+  top: 120px;
+  height: 40px;
+  width: 40px;
+}
+
+.carousel-item h3 {
+  font-size: 20px;
+  letter-spacing: 6px;
+}
