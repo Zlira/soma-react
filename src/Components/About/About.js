@@ -1,16 +1,16 @@
 import React from "react";
 
-import BackgroundImages from "./BackgroundImgs/BackgroundImgs";
+import BackgroundImages from "../BackgroundImgs/BackgroundImgs";
 import {
   LetterS,
   LetterO,
   LetterM,
   LetterA
-} from "./soma_letters/SomaLetters.js";
+} from "../soma_letters/SomaLetters.js";
 
-import comeImg from "./button_imgs/come.png";
-import donateImg from "./button_imgs/donate.png";
-import "./about.css";
+import comeImg from "../button_imgs/come.png";
+import donateImg from "../button_imgs/donate.png";
+import "./About.css";
 
 function SiteHeader() {
   return (

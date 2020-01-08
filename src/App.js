@@ -1,10 +1,10 @@
 import React from "react";
 
-import SiteNavigation from "./SiteNavigation";
-import About from "./About";
-import Announcements from "./Announcements/Announcements";
-import Participation from "./Participation";
-import Contacts from "./Contacts";
+import SiteNavigation from "./Components/SiteNavigation/SiteNavigation";
+import About from "./Components/About/About";
+import Announcements from "./Components/Announcements/Announcements";
+import Participation from "./Components/Participation";
+import Contacts from "./Components/Contacts";
 
 function App() {
   return (
