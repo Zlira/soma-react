@@ -18,6 +18,7 @@ import hideOnClickOutside from "../../DomHelpers";
 import GoogleCalendarLink from "./GoogleCalendarLink";
 
 import "./Calendar.css";
+import Carousel from "react-bootstrap/Carousel";
 
 export default class Calendar extends React.Component {
   constructor(props) {
@@ -109,7 +110,7 @@ export default class Calendar extends React.Component {
           endDate={endDate}
           incrementDate={this.incrementStartDate}
         />
-        <div className="calendar">{dayCols}</div>
+        <div className="calendar">{dayCols}</div>>
         {this.state.errorLoading ? (
           <p className="loading-error">
             Вибачте, не вдалося завантажити події, дивіться у{" "}

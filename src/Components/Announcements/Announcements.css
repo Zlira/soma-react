@@ -18,3 +18,11 @@
   font-size: 20px;
   letter-spacing: 6px;
 }
+
+.announcement-card__link {
+  margin-left: 3px;
+}
+
+.btn:focus {
+  color: #0000fb;
+}

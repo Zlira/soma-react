@@ -1,12 +1,26 @@
 import React, { Fragment } from "react";
 import "./SiteNavigation.css";
+import { Link } from "react-scroll";
 
 function NavLink({ href, text, children }) {
   return (
     <li className="nav-item">
-      <a className="nav-link" href={href}>
+      {/* <a className="nav-link" href={href}>
         {text}
-      </a>
+      </a> */}
+      <Link
+        className="nav-link"
+        activeClass="active"
+        to={href}
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={600}
+        delay={5}
+        isDynamic={true}
+      >
+        {text}
+      </Link>
       {children}
     </li>
   );
@@ -28,13 +42,13 @@ function SocialMediaLink(props) {
 
 function SiteNavigation() {
   const navItems = [
-    { href: "#announcements", text: "анонси" },
+    { href: "announcements", text: "анонси" },
     // { href: "#workshop", text: "майстерні" },
-    { href: "#participation", text: "участь" },
-    { href: "#calendar", text: "розклад" },
+    { href: "participation", text: "участь" },
+    { href: "calendar", text: "розклад" },
     // { href: "#masters", text: "майстри_ні" },
     {
-      href: "#contacts",
+      href: "contacts",
       text: "контакти",
       children: (
         <>

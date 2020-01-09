@@ -11,6 +11,7 @@
 
 .site-navigation .nav-link,
 .site-navigation .dropdown-item {
+  display: inline-block;
   padding: 16px 8px 0px 8px;
   color: #ef4123;
   background-color: yellow;
@@ -56,4 +57,15 @@
 .site-navigation .dropdown-item:hover,
 .site-navigation .dropdown-item:focus {
   color: #0000fb;
+}
+
+a:not([href]):not([tabindex]) {
+  color: #ef4123;
+  text-decoration: none;
+}
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+  color: #0000fb;
+  text-decoration: none;
+  cursor: pointer;
 }
