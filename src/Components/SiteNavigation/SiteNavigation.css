@@ -69,3 +69,9 @@ a:not([href]):not([tabindex]):hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  height: 55%;
+  width: 10%;
+}

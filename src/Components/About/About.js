@@ -65,7 +65,11 @@ function Buttons() {
       </div>
 
       <div className="col">
-        <a href="#">
+        <a
+          href="https://privatbank.ua/sendmoney?payment=a101e4603b"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src={donateImg}
             alt="донуйте грошей"
