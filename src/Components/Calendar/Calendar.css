@@ -340,7 +340,7 @@
     padding-top: 15px;
     padding-bottom: 5px;
     background-color: white;
-    z-index: 5;
+    z-index: 2;
     -webkit-transform: translate(-60px, 0px);
     transform: translate(-60px, 0px);
     width: calc(100vw - 50px);

@@ -119,11 +119,13 @@ p {
 }
 
 .btn {
+  position: relative;
   padding-right: 15%;
   border-radius: 0;
   letter-spacing: 8px;
   font-weight: bold;
   text-decoration: none !important;
+  z-index: 2;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled).active,

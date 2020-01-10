@@ -24,7 +24,7 @@ function Announcement({ name, text, image, linkPath, linkName }) {
         <p className="announcement-card__link">
           <a
             href={linkPath}
-            className="btn btn-outline-primary mt-4"
+            className="btn btn-outline-primary"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -5,19 +5,17 @@ import { Link } from "react-scroll";
 function NavLink({ href, text, children }) {
   return (
     <li className="nav-item">
-      {/* <a className="nav-link" href={href}>
-        {text}
-      </a> */}
       <Link
         className="nav-link"
         activeClass="active"
         to={href}
         spy={true}
         smooth={true}
-        offset={0}
+        offset={-20}
         duration={600}
         delay={5}
         isDynamic={true}
+        tabIndex={0}
       >
         {text}
       </Link>

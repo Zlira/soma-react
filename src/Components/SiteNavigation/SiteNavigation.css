@@ -6,7 +6,7 @@
   position: sticky;
   top: 0px;
   /* todo sort this out with z-indeces */
-  z-index: 1;
+  z-index: 3;
 }
 
 .site-navigation .nav-link,
@@ -20,6 +20,7 @@
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .site-navigation .nav-link:hover,
@@ -57,21 +58,4 @@
 .site-navigation .dropdown-item:hover,
 .site-navigation .dropdown-item:focus {
   color: #0000fb;
-}
-
-a:not([href]):not([tabindex]) {
-  color: #ef4123;
-  text-decoration: none;
-}
-a:not([href]):not([tabindex]):focus,
-a:not([href]):not([tabindex]):hover {
-  color: #0000fb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  height: 55%;
-  width: 10%;
 }
