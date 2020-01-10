@@ -1,0 +1,16 @@
+.participation h4 {
+  font-size: 16px;
+}
+
+.participation h4::before {
+  content: "/";
+}
+
+.participation .btn {
+  position: absolute;
+  bottom: 0;
+}
+
+.participation .particip-card {
+  padding-bottom: 38px;
+}

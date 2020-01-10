@@ -1,101 +1,98 @@
 /**
  * Font
  */
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap&subset=cyrillic");
 
 ::selection {
-	background: rgba(0, 0, 251, .99);
-	color: #ffffff;
+  background: rgba(0, 0, 251, 0.99);
+  color: #ffffff;
 }
-
 
 /**
  * Normalize
  */
 body {
-	background: #fff;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 15px;
+  background: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
 }
 
 a:hover,
 a:focus {
-	color: #0000fb;
+  color: #0000fb;
 }
 
 .title {
-	margin-bottom: 0;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 8px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 8px;
 }
 
-p:not( .calendar__event-time ),
-p:not( .calendar__date ) {
-	font-weight: normal;
-	letter-spacing: 1px;
-	line-height: 1.5;
+p {
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 1.5;
 }
 
 .hide {
-	display: none;
+  display: none;
 }
 
 /* Text meant only for screen readers. */
 /* todo test with screen reader */
 .screen-reader-text {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute !important;
-	width: 1px;
-	word-wrap: normal !important;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	clip-path: none;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000;
-	/* Above WP toolbar. */
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
 }
 
 /**
  * Entry header
  */
 .entry-header .entry-title {
-	height: auto;
-	margin-left: 4px;
-	margin-bottom: 64px;
-	padding-top: 32px;
-	color: #222;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 6px;
-	font-size: 24px;
+  height: auto;
+  margin-left: 4px;
+  margin-bottom: 64px;
+  padding-top: 32px;
+  color: #222;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 24px;
 }
 
 .entry-header .entry-title:before {
-	content: '/';
+  content: "/";
 }
 
 /**
@@ -103,11 +100,49 @@ p:not( .calendar__date ) {
  */
 
 .entry-content p > a {
-	color: #EF4123;
-	text-decoration: underline;
+  color: #ef4123;
+  text-decoration: underline;
 }
 
 .entry-content p > a:hover,
 .entry-content p > a:focus {
-	text-decoration: none;
+  text-decoration: none;
+}
+
+/**
+ * Buttons
+ */
+
+.btn-outline-primary {
+  color: #ef4123;
+  border-color: #ef4123;
+}
+
+.btn {
+  position: relative;
+  padding-right: 15%;
+  border-radius: 0;
+  letter-spacing: 8px;
+  font-weight: bold;
+  text-decoration: none !important;
+  z-index: 2;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #ef4123;
+  border-color: #ef4123;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #ef4123;
+  border-color: #ef4123;
+}
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem #ef4123;
 }

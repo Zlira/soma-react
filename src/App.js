@@ -1,15 +1,23 @@
-import React from 'react';
+import React from "react";
 
-import SiteNavigation from './SiteNavigation'
-import About from './About'
-import Announcements from './Announcements/Announcements'
+import SiteNavigation from "./Components/SiteNavigation/SiteNavigation";
+import About from "./Components/About/About";
+import Announcements from "./Components/Announcements/Announcements";
+import Participation from "./Components/Participation";
+import Contacts from "./Components/Contacts";
+import CalendarWrapped from "./Components/Calendar/CalendarWrapped";
 
 function App() {
-  return (<div className="site container">
-    <SiteNavigation/>
-    <About/>
-    <Announcements/>
-  </div>)
+  return (
+    <div className="site container">
+      <SiteNavigation />
+      <About />
+      <Announcements />
+      <Participation />
+      <CalendarWrapped />
+      <Contacts />
+    </div>
+  );
 }
 
 export default App;
