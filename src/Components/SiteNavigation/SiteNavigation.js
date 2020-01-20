@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./SiteNavigation.css";
 import { Link } from "react-scroll";
 

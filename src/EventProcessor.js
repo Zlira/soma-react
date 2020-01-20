@@ -16,7 +16,6 @@ const DayParts = [
 ]
 
 export function parseEvent(event) {
-  console.log(event.id)
   let description
   try {
     description = <span dangerouslySetInnerHTML={{ __html: event.description }}></span>
@@ -73,6 +72,5 @@ export function splitEventsByDate(events, startDate, endDate) {
     dateRange, (bin, event) => isSameDate(bin, event.startDT),
     events
   )
-  console.log(res)
   return res
 }

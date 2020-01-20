@@ -3,6 +3,7 @@ import YAML from "yaml";
 import Carousel from "react-bootstrap/Carousel";
 import "./Announcements.css";
 
+
 function Announcement({ name, text, image, linkPath, linkName }) {
   return (
     <div className="announcement-card">
@@ -51,9 +52,9 @@ export default function Announcements() {
     announcementElems = announcements.map(announcement => {
       const [name, ops] = Object.entries(announcement)[0];
       return (
-        <Carousel.Item>
+        <Carousel.Item key={name}>
           <div>
-            <Announcement {...ops} key={name} />
+            <Announcement {...ops} />
           </div>
         </Carousel.Item>
       );
