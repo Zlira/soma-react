@@ -1,11 +1,16 @@
-import React from "react";
-import "./SiteNavigation.css";
+import React, {useState} from "react";
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 import { Link } from "react-scroll";
 
-function NavLink({ href, text, children }) {
+import "./SiteNavigation.css";
+
+
+function NavLink({ href, text, children, onSelect }) {
   return (
-    <li className="nav-item">
+    <>
       <Link
+        onClick={onSelect}
         className="nav-link"
         activeClass="active"
         to={href}
@@ -20,7 +25,7 @@ function NavLink({ href, text, children }) {
         {text}
       </Link>
       {children}
-    </li>
+    </>
   );
 }
 
@@ -43,7 +48,7 @@ function SiteNavigation() {
     { href: "announcements", text: "анонси" },
     // { href: "#workshop", text: "майстерні" },
     { href: "participation", text: "участь" },
-    { href: "calendar", text: "розклад" },
+    { href: "calendar", text: "публічні події" },
     // { href: "#masters", text: "майстри_ні" },
     {
       href: "contacts",
@@ -62,12 +67,23 @@ function SiteNavigation() {
       )
     }
   ];
+  const [expanded, setExpanded] = useState(false)
   return (
-    <ul className="site-navigation nav justify-content-end">
-      {navItems.map(item => (
-        <NavLink {...item} key={item.href} />
-      ))}
-    </ul>
+    <Navbar collapseOnSelect fixed="top"
+      expanded={expanded}
+      onToggle={() => setExpanded(!expanded)}
+      expand="sm" className='justify-content-end'>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse className='justify-content-end'>
+        <Nav>
+          {navItems.map(item => (
+            <Nav.Item key={item.href}>
+              <NavLink {...item}  onSelect={() => setExpanded(false)}/>
+            </Nav.Item>
+          ))}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 

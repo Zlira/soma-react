@@ -8,8 +8,8 @@ let registrationLink = "https://forms.gle/TBfYPvjDfvb1cb59A";
 let info = [
   {
     imgLink: kovtky,
-    imgAlt: "мега-папiрец",
-    title: "3 ковтки соми",
+    imgAlt: "три ковтки соми",
+    title: "три ковтки соми",
     description: `Тестовий супер-папірець, для тих, хто у нас вперше.
     Три будь-які різні заняття, окрім виняткових, позначених в календарі зірочкою\u00A0(*)`,
     validPeriod: "діє – місяць",
@@ -19,9 +19,9 @@ let info = [
 
   {
     imgLink: mega,
-    imgAlt: "пташка",
+    imgAlt: "мега-папірець",
     title: "мега-папірець",
-    description: `Всі події та класи, окрім виняткових, використання простору в час "вільної майстерні”, чайок`,
+    description: `Всі події та класи, окрім виняткових, використання простору майстерні для власного дослідження, чайок`,
     validPeriod: "діє – місяць",
     price: "1000/1200 грн",
     registrationLink: registrationLink
@@ -29,7 +29,7 @@ let info = [
 
   {
     imgLink: tilo,
-    imgAlt: "contemporary dance",
+    imgAlt: "тіло",
     title: "тіло",
     description: `8 будь-яких занять, окрім виняткових подій, позначених в календарі зірочкою\u00A0(*)`,
     validPeriod: "діє – місяць",
@@ -54,7 +54,7 @@ let info = [
     description: `Папірець для студентів та пенсіонерів, 6 будь-яких занять,
     окрім вийняткових подій, позначених в календарі зірочкою\u00A0(*)`,
     validPeriod: "діє – місяць",
-    price: "150 грн",
+    price: "400 грн",
     registrationLink: registrationLink
   }
 ];

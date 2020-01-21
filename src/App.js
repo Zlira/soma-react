@@ -9,14 +9,16 @@ import CalendarWrapped from "./Components/Calendar/CalendarWrapped";
 
 function App() {
   return (
+    <>
+    <SiteNavigation />
     <div className="site container">
-      <SiteNavigation />
       <About />
       <Announcements />
       <Participation />
       <CalendarWrapped />
       <Contacts />
     </div>
+    </>
   );
 }
 

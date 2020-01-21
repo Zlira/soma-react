@@ -1,43 +1,33 @@
 /**
  * Site Navigation
  */
-.site-navigation {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  /* todo sort this out with z-indeces */
+.navbar {
+  background-color: white;
   z-index: 3;
 }
 
-.site-navigation .nav-link,
-.site-navigation .dropdown-item {
+.nav-item {
+  text-align: right;
+}
+
+.navbar-nav .nav-item .nav-link {
   display: inline-block;
-  padding: 16px 8px 0px 8px;
-  color: #ef4123;
-  background-color: yellow;
-  background-clip: content-box;
+  padding: 8px;
+  color: #ff381d;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 2px;
   cursor: pointer;
 }
 
-.site-navigation .nav-link:hover,
-.site-navigation .nav-link:focus,
-.site-navigation .dropdown-item:hover,
-.site-navigation .dropdown-item:focus {
-  color: #0000fb;
-}
-
-.site-navigation .nav-link:before {
+.navbar .nav-link:before {
   content: "/ ";
 }
 
-.site-navigation a.social-media-link {
+.navbar a.social-media-link {
   display: inline-block;
-  color: #ef4123;
-  background-color: yellow;
+  color: #ff381d;
   padding: 2px 6px 1px 6px;
   margin: 4px 0px 0px 2px;
   margin-left: 2px;
@@ -47,15 +37,30 @@
   text-decoration: none;
 }
 
-.site-navigation a.social-media-link:nth-child(2) {
+.navbar a.social-media-link:nth-child(2) {
   margin-left: 8px;
 }
 
-.site-navigation a.social-media-link:hover,
-.site-navigation a.social-media-link:focus,
-.site-navigation .nav-link:hover,
-.site-navigation .nav-link:focus,
-.site-navigation .dropdown-item:hover,
-.site-navigation .dropdown-item:focus {
+.navbar .nav-item a.social-media-link:hover,
+.navbar .nav-item a.social-media-link:focus,
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:focus {
   color: #0000fb;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(./imgs/menu-24px.svg);
+}
+
+@media (max-width: 576px) {
+  .navbar a.social-media-link {
+    display: inline;
+  }
+  .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
 }
