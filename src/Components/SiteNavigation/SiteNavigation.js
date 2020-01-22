@@ -45,10 +45,9 @@ function SocialMediaLink(props) {
 function SiteNavigation() {
   const navItems = [
     { href: "announcements", text: "анонси" },
-    // { href: "#workshop", text: "майстерні" },
     { href: "participation", text: "участь" },
     { href: "calendar", text: "публічні події" },
-    // { href: "#masters", text: "майстри_ні" },
+    { href: "staff", text: "колектив" },
     {
       href: "contacts",
       text: "контакти",
