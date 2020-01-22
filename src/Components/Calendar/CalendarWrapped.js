@@ -6,7 +6,7 @@ function CalendarWrapped() {
   return (
     <section id="calendar" className="entry mb-5">
       <header className="entry-header">
-        <h2 className="entry-title">Календар</h2>
+        <h2 className="entry-title">Публічні події</h2>
       </header>
       <ErrorBoundry>
         <Calendar />

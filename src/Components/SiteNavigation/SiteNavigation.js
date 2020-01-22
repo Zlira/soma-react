@@ -15,7 +15,7 @@ function NavLink({ href, text, children, onSelect }) {
         to={href}
         spy={true}
         smooth={true}
-        offset={-20}
+        offset={-60}
         duration={600}
         delay={5}
         isDynamic={true}
