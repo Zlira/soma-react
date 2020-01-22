@@ -1,10 +1,9 @@
-import React, {useState} from "react";
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import React, { useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 import { Link } from "react-scroll";
 
 import "./SiteNavigation.css";
-
 
 function NavLink({ href, text, children, onSelect }) {
   return (
@@ -16,7 +15,7 @@ function NavLink({ href, text, children, onSelect }) {
         to={href}
         spy={true}
         smooth={true}
-        offset={-20}
+        offset={-60}
         duration={600}
         delay={5}
         isDynamic={true}
@@ -67,18 +66,22 @@ function SiteNavigation() {
       )
     }
   ];
-  const [expanded, setExpanded] = useState(false)
+  const [expanded, setExpanded] = useState(false);
   return (
-    <Navbar collapseOnSelect fixed="top"
+    <Navbar
+      collapseOnSelect
+      fixed="top"
       expanded={expanded}
       onToggle={() => setExpanded(!expanded)}
-      expand="sm" className='justify-content-end'>
+      expand="sm"
+      className="justify-content-end"
+    >
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse className='justify-content-end'>
+      <Navbar.Collapse className="justify-content-end">
         <Nav>
           {navItems.map(item => (
             <Nav.Item key={item.href}>
-              <NavLink {...item}  onSelect={() => setExpanded(false)}/>
+              <NavLink {...item} onSelect={() => setExpanded(false)} />
             </Nav.Item>
           ))}
         </Nav>
