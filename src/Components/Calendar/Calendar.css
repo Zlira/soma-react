@@ -59,7 +59,7 @@
 }
 
 .calendar__date {
-  color: #f00;
+  color: #ff381d;
   font-weight: bold;
 }
 
@@ -84,11 +84,11 @@
 }
 
 .calendar__slot_morning .calendar__event:first-child {
-  border-top: 2px solid #f00;
+  border-top: 2px solid #ff381d;
 }
 
 .calendar__slot_morning .calendar__event:first-child:after {
-  border-left: 2px solid #f00;
+  border-left: 2px solid #ff381d;
   top: -2px;
 }
 
@@ -173,7 +173,7 @@
   margin: 0;
   font-weight: bold;
   font-size: 1.5rem;
-  color: #f00;
+  color: #ff381d;
   margin-left: 10px;
 }
 
