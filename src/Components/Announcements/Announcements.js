@@ -3,7 +3,6 @@ import YAML from "yaml";
 import Carousel from "react-bootstrap/Carousel";
 import "./Announcements.css";
 
-
 function Announcement({ name, text, image, linkPath, linkName }) {
   return (
     <div className="announcement-card">
@@ -64,10 +63,10 @@ export default function Announcements() {
     <section id="announcements" className="entry mb-5">
       <div className="entry-header">
         <h2 className="entry-title">Анонси</h2>
-        <div className="entry-content">
-          <div className="card-holder">
-            <Carousel indicators={false}>{announcementElems}</Carousel>
-          </div>
+      </div>
+      <div className="entry-content">
+        <div className="card-holder">
+          <Carousel indicators={false}>{announcementElems}</Carousel>
         </div>
       </div>
     </section>

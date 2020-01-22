@@ -79,20 +79,32 @@ p {
 /**
  * Entry header
  */
+.entry-header {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 50%;
+  border: 2px solid red;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+  .entry-header {
+    width: 95%;
+  }
+}
 .entry-header .entry-title {
-  height: auto;
-  margin-left: 4px;
-  margin-bottom: 64px;
-  padding-top: 32px;
-  color: #222;
+  margin-left: 17px;
+  margin-bottom: -0.1rem;
+  margin-right: -1px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+  color: white;
+  background-color: red;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 6px;
   font-size: 24px;
-}
-
-.entry-header .entry-title:before {
-  content: "/";
+  width: calc(100% - 17px);
 }
 
 /**
