@@ -11,8 +11,10 @@ function App() {
   return (
     <>
     <SiteNavigation />
-    <div className="site container">
+    <div className='fluid-container'>
       <About />
+    </div>
+    <div className="site container">
       <Announcements />
       <Participation />
       <CalendarWrapped />

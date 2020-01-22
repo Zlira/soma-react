@@ -6,8 +6,16 @@
 
 .contacts iframe {
   border: 0;
+  width: 600px;
+  height: 450px;
 }
 
 .contacts a {
   display: block;
+}
+
+@media only screen and (max-width: 576px) {
+  .contacts iframe {
+    width: 100%;
+  }
 }

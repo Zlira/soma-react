@@ -1,6 +1,5 @@
 import React from "react";
 
-import BackgroundImages from "../BackgroundImgs/BackgroundImgs";
 import {
   LetterS,
   LetterO,
@@ -92,11 +91,10 @@ function Marquee() {
     "вечірки",
     "резиденції"
   ];
-  const colors = ["#f0f", "#0f0", "#f00", "#00f"];
   const eventELements = events.map((event, index) => (
     <React.Fragment key={index}>
-      <span style={{ color: colors[index % 4] }}>{event}</span>
-      <span style={{ color: colors[(index + 2) % 4] }}>◆</span>
+      <span>{event}</span>
+      <span> ◆ </span>
     </React.Fragment>
   ));
   return (
@@ -110,7 +108,6 @@ function Marquee() {
 export default function About() {
   return (
     <section id="home" className="entry mb-5">
-      <BackgroundImages />
       <SiteHeader />
       <SiteDescription />
       <Buttons />

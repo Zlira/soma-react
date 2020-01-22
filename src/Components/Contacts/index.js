@@ -25,8 +25,6 @@ function Map({ link }) {
       src={link}
       allowFullScreen=""
       frameBorder="0"
-      width="600"
-      height="450"
     ></iframe>
   );
 }
@@ -39,7 +37,7 @@ function Contacts() {
       </header>
 
       <div className="row">
-        <div className="col">
+        <div className="col-12 col-md-6">
           <p>
             <SocialMediaLink
               link="https://www.facebook.com/soma.majsternia"
@@ -56,7 +54,7 @@ function Contacts() {
             <PhoneNum link="tel:+380689595582" number="068 959 5582" />
           </p>
         </div>
-        <div className="col">
+        <div className="col-12 col-md-6">
           <Map link="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1135.9628249679438!2d24.036802421084904!3d49.83289850200775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add349ad6ddcf%3A0xb07a488bd1318bb6!2ssoma!5e1!3m2!1suk!2sua!4v1557503536755!5m2!1suk!2sua" />
         </div>
       </div>

@@ -213,7 +213,7 @@
   color: grey;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .calendar {
     grid-template-columns: minmax(120px, auto);
   }
@@ -332,19 +332,16 @@
   .calendar__event-title {
     height: 4em;
   }
+
   .calendar__week-switcher {
     position: -webkit-sticky;
     position: sticky;
-    left: 200px;
-    top: 0px;
-    padding-top: 15px;
-    padding-bottom: 5px;
+    top: 54px;
+    padding: 0 0 10px 20px;
     background-color: white;
     z-index: 2;
-    -webkit-transform: translate(-60px, 0px);
-    transform: translate(-60px, 0px);
+    transform: translate(-10px, 0px);
     width: calc(100vw - 50px);
-    padding-left: 30px;
   }
   .calendar__event-description {
     width: calc(100% - 20px);
