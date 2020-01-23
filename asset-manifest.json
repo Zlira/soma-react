@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/soma-react/static/css/main.f26318c2.chunk.css",
-    "main.js": "/soma-react/static/js/main.38562503.chunk.js",
-    "main.js.map": "/soma-react/static/js/main.38562503.chunk.js.map",
+    "main.js": "/soma-react/static/js/main.4f3bf9c9.chunk.js",
+    "main.js.map": "/soma-react/static/js/main.4f3bf9c9.chunk.js.map",
     "runtime-main.js": "/soma-react/static/js/runtime-main.2d294005.js",
     "runtime-main.js.map": "/soma-react/static/js/runtime-main.2d294005.js.map",
     "static/js/2.2e0c921c.chunk.js": "/soma-react/static/js/2.2e0c921c.chunk.js",
     "static/js/2.2e0c921c.chunk.js.map": "/soma-react/static/js/2.2e0c921c.chunk.js.map",
     "index.html": "/soma-react/index.html",
-    "precache-manifest.be3b5da8332e8f2b27c56042bdf1d40f.js": "/soma-react/precache-manifest.be3b5da8332e8f2b27c56042bdf1d40f.js",
+    "precache-manifest.ee2fbd6464e3c9a1314b3c03c15792a6.js": "/soma-react/precache-manifest.ee2fbd6464e3c9a1314b3c03c15792a6.js",
     "service-worker.js": "/soma-react/service-worker.js",
     "static/css/main.f26318c2.chunk.css.map": "/soma-react/static/css/main.f26318c2.chunk.css.map",
     "static/media/3kovtky.png": "/soma-react/static/media/3kovtky.5c90b60d.png",
@@ -37,6 +37,6 @@
     "static/js/runtime-main.2d294005.js",
     "static/js/2.2e0c921c.chunk.js",
     "static/css/main.f26318c2.chunk.css",
-    "static/js/main.38562503.chunk.js"
+    "static/js/main.4f3bf9c9.chunk.js"
   ]
 }
