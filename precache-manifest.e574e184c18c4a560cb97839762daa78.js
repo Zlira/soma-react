@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f21cea81fa206a8784fdd6c7d98e83e",
+    "revision": "1d998a955a0040fba1632c4fb7fb0d88",
     "url": "/soma-react/index.html"
   },
   {
-    "revision": "030044e81c324284c508",
-    "url": "/soma-react/static/css/main.f26318c2.chunk.css"
+    "revision": "a4c91cf16da4ee0dc77e",
+    "url": "/soma-react/static/css/main.db16ff54.chunk.css"
   },
   {
-    "revision": "c8339026f03e1ab85f53",
-    "url": "/soma-react/static/js/2.2e0c921c.chunk.js"
+    "revision": "27a2371e0a7024d39323",
+    "url": "/soma-react/static/js/2.608535c9.chunk.js"
   },
   {
-    "revision": "030044e81c324284c508",
-    "url": "/soma-react/static/js/main.4f3bf9c9.chunk.js"
+    "revision": "a4c91cf16da4ee0dc77e",
+    "url": "/soma-react/static/js/main.606ec852.chunk.js"
   },
   {
     "revision": "f01df57a1c36971e9ac2",
@@ -64,10 +64,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/soma-react/static/media/menu-24px.f7ee666b.svg"
   },
   {
-    "revision": "391af472e8cd6f64d3be0990d29e08a9",
-    "url": "/soma-react/static/media/next.391af472.png"
-  },
-  {
     "revision": "d43e36f79f1dcac726b5699ed923b8d3",
     "url": "/soma-react/static/media/o.d43e36f7.svg"
   },
@@ -78,10 +74,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c6de8992e6bd73b2cb3fa9f157512119",
     "url": "/soma-react/static/media/palychka.c6de8992.svg"
-  },
-  {
-    "revision": "14f0bc2102711c84e0f235a4dcd3cb30",
-    "url": "/soma-react/static/media/prev.14f0bc21.png"
   },
   {
     "revision": "7ed1d8ac6396681b8e0be86f33de3441",
