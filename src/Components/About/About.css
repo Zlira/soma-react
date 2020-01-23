@@ -14,15 +14,21 @@
   height: calc((100vh - 89px) * 0.35);
 }
 
-.come-row, .donate-row {
+.come-row,
+.donate-row {
   height: calc((100vh - 89px) * 0.15);
 }
 
-.banner-col, .center-col, .right-col, .left-col {
+.banner-col,
+.center-col,
+.right-col,
+.left-col {
   height: 100%;
 }
 
-.center-col, .right-col, .left-col {
+.center-col,
+.right-col,
+.left-col {
   border-bottom: 2px solid #ff381d;
 }
 
@@ -55,7 +61,7 @@
   text-transform: uppercase;
   font-size: 2.5rem;
   margin: 0;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
 }
 
@@ -84,7 +90,8 @@
   padding-right: 10px;
 }
 
-.circle-img, .stick-img {
+.circle-img,
+.stick-img {
   display: block;
 }
 
