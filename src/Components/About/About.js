@@ -187,7 +187,7 @@ export default function About() {
         </CenterCol>
         <RightCol></RightCol>
       </div>
-      <div className="row d-flex d-lg-none no-gutters md-bottom-row justify-content-end">
+      <div className="row d-flex d-lg-none mobile-a-row no-gutters justify-content-end">
         <CenterCol>
           <LetterA />
         </CenterCol>
