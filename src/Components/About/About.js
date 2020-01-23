@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Collapse from 'react-bootstrap/Collapse';
 
 import {
   LetterS,
@@ -19,6 +20,14 @@ import "./About.css";
 function SiteDescription() {
   return (
     <div className="site-description">
+      <div className="row">
+        <p className="col-md">танцююча спільнота самосвідомих та активних громадян_ок</p>
+        <p className="col-md">альтернативне дозвілля, в основі якого експеримет та практики рівності</p>
+      </div>
+      <div className="row">
+        <p className="col-md">зв'язок з тілом, як база для мистецького дослідження та здорового життя</p>
+        <p className="col-md">інтсрументи та знання для тілесного і творчого розвитку</p>
+      </div>
       <p>
         Soma. майстерня – це відкрите експериметальне та продуктивне мистецьке
         середовище, що існує в контексті міста. Бачимо своєю місією створити
@@ -26,11 +35,6 @@ function SiteDescription() {
         дослідження. Нам близькі питання тіла в урбаністичному середовищі та DIY
         культура. Основні напрямки діяльності майстерні – дослідження в
         сучасному танці, перформансі, дизайні, та експериментальний самвидав.
-      </p>
-      <p>
-        Ми працюємо як вільний простір для праці і дослідження для учасників
-        майстерні та проводимо різноманітні воркшопи, регулярні класи, джеми,
-        концерти, вечірки, лекції та бесіди.
       </p>
     </div>
   );
@@ -81,53 +85,109 @@ function Marquee() {
   );
 }
 
+function col(classes, children) {
+  const className = classes.reduce((acc, val) => acc + ' ' + val,  '')
+  return <div className={className}>{children}</div>
+}
+
+function LeftCol({children}) {
+  const classes = [
+    'left-col',
+    'col-8',
+    'col-lg-4',
+  ]
+  return col(classes, children)
+}
+
+
+function CenterCol({children}) {
+  const classes = [
+    "center-col",
+    "col-3",
+    "col-lg-1",
+    "d-flex",
+    "flex-column",
+    "align-items-center",
+    "justify-content-end",
+  ]
+  return col(classes, children)
+}
+
+function RightCol({children}) {
+  const classes = [
+    "right-col",
+    "d-none",
+    "d-lg-flex",
+    "flex-column",
+    "col-6",
+    "align-items-center",
+    "justify-content-end",
+  ]
+  return col(classes, children)
+}
+
 export default function About() {
+  let [descriptionVisible, setDescriptionVisible] = useState(false)
   return (
     <section id="home" className="entry mb-5">
-      <div className="row no-gutters top-row">
+      <div className="row no-gutters what-is-it-row">
         <div className="col-1 banner-col">
           <img src={banerImg}  className="banner-img" alt="soma" />
         </div>
-        <div className="col-8 col-lg-4 left-col">
-          <p className="what-is-it">що це?</p>
-        </div>
-        <div className="col-3 col-lg-1 center-col align-items-center justify-content-end">
+        <LeftCol>
+          <p className="what-is-it" onClick={() => setDescriptionVisible(!descriptionVisible)}>що це?</p>
+        </LeftCol>
+        <CenterCol>
           <LetterS />
           <LetterO />
-        </div>
-        <div className="d-none d-lg-flex col-6 right-col align-items-center justify-content-end">
+        </CenterCol>
+        <RightCol>
           <LetterA/>
-        </div>
+        </RightCol>
       </div>
-      <div className="row no-gutters middle-row justify-content-end">
-        <div className="col-8 col-lg-4 left-col">
-          <img src={hairImg} className="hair-img" alt="" />
+      <Collapse in={descriptionVisible}>
+        <div className="site-description-container">
+          <SiteDescription/>
+        </div>
+      </Collapse>
+      <Collapse in={!descriptionVisible}>
+        <div>
+          <div className="row no-gutters hair-row justify-content-end">
+            <LeftCol>
+              <img src={hairImg} className="hair-img" alt="" />
+            </LeftCol>
+            <CenterCol>
+              <img src={stickImg} className="stick-img" alt=""/>
+              <img src={circleImg} className="circle-img" alt=""/>
+            </CenterCol>
+            <RightCol></RightCol>
+          </div>
+        </div>
+      </Collapse>
+      <div className="row no-gutters come-row justify-content-end">
+        <LeftCol>
           <Button text="прийти"
             className="heart-button-come"
             link="https://forms.gle/TBfYPvjDfvb1cb59A"/>
-        </div>
-        <div className="col-lg-1 col-3 center-col ">
-          <img src={stickImg} className="stick-img" alt=""/>
-          <img src={circleImg} className="circle-img" alt=""/>
-        </div>
-        <div className="col-6 d-none d-lg-flex right-col"></div>
+        </LeftCol>
+        <CenterCol></CenterCol>
+        <RightCol></RightCol>
       </div>
-      <div className="row no-gutters bottom-row justify-content-end">
-        <div className="col-lg-4 col-8 left-col">
+      <div className="row no-gutters donate-row justify-content-end">
+        <LeftCol>
           <Button text="donate"
             className="heart-button-donate"
             link="https://privatbank.ua/sendmoney?payment=a101e4603b"/>
-        </div>
-        <div className="col-lg-1 col-3 d-flex center-col align-items-center justify-content-end">
+        </LeftCol>
+        <CenterCol>
           <LetterM/>
-        </div>
-        <div className="col-6 d-none d-lg-flex right-col">
-        </div>
+        </CenterCol>
+        <RightCol></RightCol>
       </div>
       <div className="row d-flex d-lg-none no-gutters md-bottom-row justify-content-end">
-        <div className="col-lg-1 col-3 d-flex center-col align-items-center justify-content-end">
+        <CenterCol>
           <LetterA/>
-        </div>
+        </CenterCol>
       </div>
       <Marquee />
     </section>

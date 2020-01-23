@@ -2,21 +2,20 @@
  * Home
  */
 #home {
-  height: 100vh;
   position: relative;
   padding-top: 53px;
 }
 
-.top-row {
-  height: 26vh;
+.what-is-it-row {
+  height: calc((100vh - 89px) * 0.35);
 }
 
-.middle-row {
-  height: 48vh;
+.hair-row {
+  height: calc((100vh - 89px) * 0.35);
 }
 
-.bottom-row {
-  height: 13vh;
+.come-row, .donate-row {
+  height: calc((100vh - 89px) * 0.15);
 }
 
 .banner-col, .center-col, .right-col, .left-col {
@@ -27,6 +26,12 @@
   border-bottom: 2px solid #ff381d;
 }
 
+.hair-row .center-col,
+.hair-row .right-col,
+.hair-row .left-col {
+  border-bottom: none;
+}
+
 .md-bottom-row .center-col {
   border-bottom: none;
 }
@@ -35,23 +40,14 @@
   text-align: right;
 }
 
-.top-row .banner-img {
+.banner-img {
   width: auto;
   height: 100%;
 }
 
-.top-row .left-col {
+.what-is-it-row .left-col {
   display: flex;
   align-items: flex-end;
-}
-
-.center-col, .right-col {
-  display: flex;
-  flex-direction: column;
-}
-
-.middle-row .left-col {
-  text-align: right;
 }
 
 .what-is-it {
@@ -60,6 +56,7 @@
   font-size: 2.5rem;
   margin: 0;
   padding: .5rem 1rem;
+  cursor: pointer;
 }
 
 .center-col {
@@ -77,8 +74,12 @@
   height: 100%;
 }
 
+.hair-row .left-col {
+  text-align: center;
+}
+
 .hair-img {
-  height: 70%;
+  height: 100%;
   display: inline-block;
   padding-right: 10px;
 }
@@ -89,7 +90,6 @@
 
 .circle-img {
   width: 36px;
-  transform: translate(4vw, 8vh);
 }
 
 .stick-img {
@@ -121,34 +121,10 @@
   transform: scaleY(-1);
 }
 
-@media only screen and (max-width: 960px) {
-  .top-row {
-    height: 23vh;
-  }
-
-  .middle-row {
-    height: 40vh;
-  }
-
-  .bottom-row {
-    height: 13vh;
-  }
-
-  .md-bottom-row {
-    height: 13vh;
-  }
-
-  .center-col {
-    border-right: none;
-  }
-}
-
-
 /**
  * Marquee
  */
 .marquee {
-  position: absolute !important;
   color: #ff381d;
   bottom: 0;
   font-size: 24px;
@@ -170,5 +146,43 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+/*
+ * Site description
+ */
+
+.site-description {
+  background-color: #5caf9f;
+  color: white;
+  padding: 20px 40px;
+  min-height: calc((100vh - 89px) * 0.35);
+}
+
+@media only screen and (max-width: 960px) {
+  .top-row {
+    height: 23vh;
+  }
+
+  .middle-row {
+    height: 40vh;
+  }
+
+  .site-description {
+    min-height: 40vh;
+  }
+
+  .bottom-row {
+    height: 13vh;
+  }
+
+  .md-bottom-row {
+    height: 13vh;
+  }
+
+  .center-col {
+    border-right: none;
+    overflow: hidden;
   }
 }
