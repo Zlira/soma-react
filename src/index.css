@@ -91,7 +91,7 @@ p {
   overflow-x: auto;
   overflow-y: hidden;
   width: 50%;
-  border: 2px solid red;
+  border: 2px solid #ff381d;
   margin-bottom: 50px;
 }
 
@@ -107,7 +107,7 @@ p {
   padding-left: 10px;
   padding-bottom: 0px;
   color: white;
-  background-color: red;
+  background-color: #ff381d;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 6px;
@@ -120,7 +120,7 @@ p {
  */
 
 .entry-content p > a {
-  color: #ef4123;
+  color: #ff381d;
   text-decoration: underline;
 }
 
@@ -134,8 +134,8 @@ p {
  */
 
 .btn-outline-primary {
-  color: #ef4123;
-  border-color: #ef4123;
+  color: #ff381d;
+  border-color: #ff381d;
 }
 
 .btn {
@@ -152,17 +152,17 @@ p {
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #ef4123;
-  border-color: #ef4123;
+  background-color: #ff381d;
+  border-color: #ff381d;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #ef4123;
-  border-color: #ef4123;
+  background-color: #ff381d;
+  border-color: #ff381d;
 }
 
 .btn-outline-primary.focus,
 .btn-outline-primary:focus {
-  box-shadow: 0 0 0 0.2rem #ef4123;
+  box-shadow: 0 0 0 0.2rem #ff381d;
 }

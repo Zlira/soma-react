@@ -72,7 +72,7 @@ function SiteNavigation() {
       fixed="top"
       expanded={expanded}
       onToggle={() => setExpanded(!expanded)}
-      expand="sm"
+      expand="md"
       className="justify-content-end"
     >
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
