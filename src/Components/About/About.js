@@ -5,25 +5,16 @@ import {
   LetterO,
   LetterM,
   LetterA
-} from "../soma_letters/SomaLetters.js";
+} from "./SomaLetters.js";
 
-import comeImg from "../button_imgs/come.png";
-import donateImg from "../button_imgs/donate.png";
+import banerImg from './imgs/soma_banerok.svg'
+import hairImg from './imgs/volossia.png'
+import circleImg from './imgs/kruzhok.svg'
+import stickImg from './imgs/palychka.svg'
+import heartImg from './imgs/serce.svg'
+
 import "./About.css";
 
-function SiteHeader() {
-  return (
-    <header className="site-header">
-      <h1 className="screen-reader-text">SOMA - це середовище</h1>
-      <div className="site-title">
-        <LetterS />
-        <LetterO />
-        <LetterM />
-        <LetterA />
-      </div>
-    </header>
-  );
-}
 
 function SiteDescription() {
   return (
@@ -45,39 +36,24 @@ function SiteDescription() {
   );
 }
 
-function Buttons() {
-  const styles = { position: "absolute", bottom: 50 + "px" };
-  return (
-    <div className="row" style={styles}>
-      <div className="col">
-        <a
-          href="https://forms.gle/TBfYPvjDfvb1cb59A"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={comeImg}
-            alt="приходьте займатися"
-            style={{ width: "100px" }}
-          />
-        </a>
-      </div>
 
-      <div className="col">
+function Button({text, link, className}) {
+  className = className || ''
+  return (
+      <div className={'heart-button ' + className}>
         <a
-          href="https://privatbank.ua/sendmoney?payment=a101e4603b"
+          href={link}
           target="_blank"
           rel="noopener noreferrer"
         >
+          <span className="heart-button-text">{text}</span>
           <img
-            src={donateImg}
-            alt="донуйте грошей"
-            style={{ width: "100px" }}
+            src={heartImg}
+            alt={text}
           />
         </a>
       </div>
-    </div>
-  );
+    )
 }
 
 function Marquee() {
@@ -108,9 +84,51 @@ function Marquee() {
 export default function About() {
   return (
     <section id="home" className="entry mb-5">
-      <SiteHeader />
-      <SiteDescription />
-      <Buttons />
+      <div className="row no-gutters top-row">
+        <div className="col-1 banner-col">
+          <img src={banerImg}  className="banner-img" alt="soma" />
+        </div>
+        <div className="col-8 col-lg-4 left-col">
+          <p className="what-is-it">що це?</p>
+        </div>
+        <div className="col-3 col-lg-1 center-col align-items-center justify-content-end">
+          <LetterS />
+          <LetterO />
+        </div>
+        <div className="d-none d-lg-flex col-6 right-col align-items-center justify-content-end">
+          <LetterA/>
+        </div>
+      </div>
+      <div className="row no-gutters middle-row justify-content-end">
+        <div className="col-8 col-lg-4 left-col">
+          <img src={hairImg} className="hair-img" alt="" />
+          <Button text="прийти"
+            className="heart-button-come"
+            link="https://forms.gle/TBfYPvjDfvb1cb59A"/>
+        </div>
+        <div className="col-lg-1 col-3 center-col ">
+          <img src={stickImg} className="stick-img" alt=""/>
+          <img src={circleImg} className="circle-img" alt=""/>
+        </div>
+        <div className="col-6 d-none d-lg-flex right-col"></div>
+      </div>
+      <div className="row no-gutters bottom-row justify-content-end">
+        <div className="col-lg-4 col-8 left-col">
+          <Button text="donate"
+            className="heart-button-donate"
+            link="https://privatbank.ua/sendmoney?payment=a101e4603b"/>
+        </div>
+        <div className="col-lg-1 col-3 d-flex center-col align-items-center justify-content-end">
+          <LetterM/>
+        </div>
+        <div className="col-6 d-none d-lg-flex right-col">
+        </div>
+      </div>
+      <div className="row d-flex d-lg-none no-gutters md-bottom-row justify-content-end">
+        <div className="col-lg-1 col-3 d-flex center-col align-items-center justify-content-end">
+          <LetterA/>
+        </div>
+      </div>
       <Marquee />
     </section>
   );
