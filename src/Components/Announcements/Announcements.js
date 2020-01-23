@@ -56,7 +56,9 @@ export default function Announcements() {
       </div>
       <div className="entry-content">
         <div className="card-holder">
-          <Carousel indicators={false}>{announcementElems}</Carousel>
+          <Carousel indicators={false} interval={3000}>
+            {announcementElems}
+          </Carousel>
         </div>
         <Registration />
       </div>
