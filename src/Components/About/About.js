@@ -82,14 +82,11 @@ function Buttons() {
 
 function Marquee() {
   const events = [
-    "класи",
-    "джеми",
-    "права людини",
-    "концерти",
-    "воркшопи",
-    "перформанси",
-    "вечірки",
-    "резиденції"
+    "танцюй як хочеш",
+    "галицький квір",
+    "diy",
+    "дизайн-рух",
+    "практики рівності"
   ];
   const eventELements = events.map((event, index) => (
     <React.Fragment key={index}>
@@ -99,6 +96,7 @@ function Marquee() {
   ));
   return (
     <div className="marquee">
+      <div className="repeat">{eventELements}</div>
       <div className="repeat">{eventELements}</div>
       <div className="repeat">{eventELements}</div>
     </div>

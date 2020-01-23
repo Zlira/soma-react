@@ -2,35 +2,25 @@ import React, { useState, useEffect } from "react";
 import YAML from "yaml";
 import Carousel from "react-bootstrap/Carousel";
 import "./Announcements.css";
+import Registration from "./AnnouncementText.js";
 
-function Announcement({ name, text, image, linkPath, linkName }) {
+function Announcement({ name, image }) {
   return (
     <div className="announcement-card">
       <div className=" announcement-card__img">
-        <img
-          src={process.env.PUBLIC_URL + "/announcemets/imgs/" + image}
-          alt={name}
-          className="d-block w-100 mb-5"
-        />
-        <h3 className="title mb-5">{name}</h3>
-      </div>
-      <div>
-        <p
-          className="announcement-card__text"
-          style={{ whiteSpace: "pre-wrap" }}
-        >
-          {text}
-        </p>
-        <p className="announcement-card__link">
-          <a
-            href={linkPath}
-            className="btn btn-outline-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {linkName}
-          </a>
-        </p>
+        <picture>
+          <source
+            media="(max-width: 767.98px)"
+            srcSet={
+              process.env.PUBLIC_URL + "/announcemets/imgs/mobile/" + image
+            }
+          />
+          <img
+            src={process.env.PUBLIC_URL + "/announcemets/imgs/desktop/" + image}
+            alt={name}
+            className="d-block w-100 mb-5"
+          />
+        </picture>
       </div>
     </div>
   );
@@ -68,6 +58,7 @@ export default function Announcements() {
         <div className="card-holder">
           <Carousel indicators={false}>{announcementElems}</Carousel>
         </div>
+        <Registration />
       </div>
     </section>
   );
