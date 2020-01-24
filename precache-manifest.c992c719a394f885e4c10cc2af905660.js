@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4aa7b10e7207e31161d092e1b290b012",
+    "revision": "92474803a8950cba4107877525eece3b",
     "url": "/soma-react/index.html"
   },
   {
