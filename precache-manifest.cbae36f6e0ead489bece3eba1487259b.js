@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8673190003e0b8d0a582b2b3ffe24b72",
+    "revision": "94ee52c7c7dd17ae8594586e03b0b56f",
     "url": "/soma-react/index.html"
   },
   {
-    "revision": "86c18951377d6de9f07a",
-    "url": "/soma-react/static/css/main.0a81f4f6.chunk.css"
+    "revision": "dbb1edad96d08ea00d4b",
+    "url": "/soma-react/static/css/main.10983e99.chunk.css"
   },
   {
     "revision": "27a2371e0a7024d39323",
     "url": "/soma-react/static/js/2.608535c9.chunk.js"
   },
   {
-    "revision": "86c18951377d6de9f07a",
-    "url": "/soma-react/static/js/main.49d9edce.chunk.js"
+    "revision": "dbb1edad96d08ea00d4b",
+    "url": "/soma-react/static/js/main.86918754.chunk.js"
   },
   {
     "revision": "f01df57a1c36971e9ac2",

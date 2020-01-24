@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/soma-react/static/css/main.0a81f4f6.chunk.css",
-    "main.js": "/soma-react/static/js/main.49d9edce.chunk.js",
-    "main.js.map": "/soma-react/static/js/main.49d9edce.chunk.js.map",
+    "main.css": "/soma-react/static/css/main.10983e99.chunk.css",
+    "main.js": "/soma-react/static/js/main.86918754.chunk.js",
+    "main.js.map": "/soma-react/static/js/main.86918754.chunk.js.map",
     "runtime-main.js": "/soma-react/static/js/runtime-main.2d294005.js",
     "runtime-main.js.map": "/soma-react/static/js/runtime-main.2d294005.js.map",
     "static/js/2.608535c9.chunk.js": "/soma-react/static/js/2.608535c9.chunk.js",
     "static/js/2.608535c9.chunk.js.map": "/soma-react/static/js/2.608535c9.chunk.js.map",
     "index.html": "/soma-react/index.html",
-    "precache-manifest.bad934c74c6c161a616c6d2eaf2b583f.js": "/soma-react/precache-manifest.bad934c74c6c161a616c6d2eaf2b583f.js",
+    "precache-manifest.cbae36f6e0ead489bece3eba1487259b.js": "/soma-react/precache-manifest.cbae36f6e0ead489bece3eba1487259b.js",
     "service-worker.js": "/soma-react/service-worker.js",
-    "static/css/main.0a81f4f6.chunk.css.map": "/soma-react/static/css/main.0a81f4f6.chunk.css.map",
+    "static/css/main.10983e99.chunk.css.map": "/soma-react/static/css/main.10983e99.chunk.css.map",
     "static/media/3kovtky.png": "/soma-react/static/media/3kovtky.5c90b60d.png",
     "static/media/a.svg": "/soma-react/static/media/a.0b4c1b21.svg",
     "static/media/kristina.jpg": "/soma-react/static/media/kristina.de270df3.jpg",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.2d294005.js",
     "static/js/2.608535c9.chunk.js",
-    "static/css/main.0a81f4f6.chunk.css",
-    "static/js/main.49d9edce.chunk.js"
+    "static/css/main.10983e99.chunk.css",
+    "static/js/main.86918754.chunk.js"
   ]
 }
