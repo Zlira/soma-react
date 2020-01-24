@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/soma-react/precache-manifest.cbae36f6e0ead489bece3eba1487259b.js"
+  "/soma-react/precache-manifest.29bd5dbb16141c3e8ca2c38316f81b12.js"
 );
 
 self.addEventListener('message', (event) => {
