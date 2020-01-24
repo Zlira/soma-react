@@ -47,13 +47,18 @@ function SiteDescription() {
 
 function Button({ text, link, className }) {
   className = className || "";
+  const classes = [
+    'heart-button',
+    'd-flex',
+    'align-items-center',
+    'justify-content-between',
+    className,
+  ].join(' ')
   return (
-    <div className={"heart-button " + className}>
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <span className="heart-button-text">{text}</span>
-        <img src={heartImg} alt={text} />
-      </a>
-    </div>
+    <a href={link} className={classes} target="_blank" rel="noopener noreferrer">
+      <span className="heart-button-text">{text}</span>
+      <img src={heartImg} alt={text} />
+    </a>
   );
 }
 
@@ -119,7 +124,7 @@ function RightCol({ children }) {
 export default function About() {
   let [descriptionVisible, setDescriptionVisible] = useState(false);
   return (
-    <section id="home" className="entry mb-5">
+    <section id="home" className="entry">
       <div className="row no-gutters what-is-it-row">
         <div className="col-1 banner-col">
           <img src={banerImg} className="banner-img" alt="soma" />
@@ -128,6 +133,7 @@ export default function About() {
           <p
             className="what-is-it"
             onClick={() => setDescriptionVisible(!descriptionVisible)}
+            role="button"
           >
             що це?
           </p>

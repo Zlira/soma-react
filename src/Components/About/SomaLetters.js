@@ -6,24 +6,24 @@ import mSvg from './imgs/m.svg'
 import aSvg from './imgs/a.svg'
 
 
-function Letter({src}) {
+function Letter({src, alt}) {
   return <span className="soma-letter-container">
-    <img src={src} className="soma-letter" />
+    <img src={src} alt={alt} className="soma-letter" />
   </span>
 }
 
 export function LetterS() {
-  return <Letter src={sSvg} />
+  return <Letter src={sSvg} alt='s' />
 }
 
 export function LetterO() {
-  return <Letter src={oSvg} />
+  return <Letter src={oSvg} alt='o'/>
 }
 
 export function LetterM() {
-  return <Letter src={mSvg} />
+  return <Letter src={mSvg} alt='m'/>
 }
 
 export function LetterA() {
-  return <Letter src={aSvg} />
+  return <Letter src={aSvg} alt='a'/>
 }
