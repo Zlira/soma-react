@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/soma-react/static/css/main.4dbe9db1.chunk.css",
+    "main.css": "/soma-react/static/css/main.d69ac9fb.chunk.css",
     "main.js": "/soma-react/static/js/main.86918754.chunk.js",
     "main.js.map": "/soma-react/static/js/main.86918754.chunk.js.map",
     "runtime-main.js": "/soma-react/static/js/runtime-main.2d294005.js",
@@ -8,9 +8,9 @@
     "static/js/2.608535c9.chunk.js": "/soma-react/static/js/2.608535c9.chunk.js",
     "static/js/2.608535c9.chunk.js.map": "/soma-react/static/js/2.608535c9.chunk.js.map",
     "index.html": "/soma-react/index.html",
-    "precache-manifest.29bd5dbb16141c3e8ca2c38316f81b12.js": "/soma-react/precache-manifest.29bd5dbb16141c3e8ca2c38316f81b12.js",
+    "precache-manifest.6f66114010b63331120a267d71b79889.js": "/soma-react/precache-manifest.6f66114010b63331120a267d71b79889.js",
     "service-worker.js": "/soma-react/service-worker.js",
-    "static/css/main.4dbe9db1.chunk.css.map": "/soma-react/static/css/main.4dbe9db1.chunk.css.map",
+    "static/css/main.d69ac9fb.chunk.css.map": "/soma-react/static/css/main.d69ac9fb.chunk.css.map",
     "static/media/3kovtky.png": "/soma-react/static/media/3kovtky.5c90b60d.png",
     "static/media/a.svg": "/soma-react/static/media/a.0b4c1b21.svg",
     "static/media/kristina.jpg": "/soma-react/static/media/kristina.de270df3.jpg",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.2d294005.js",
     "static/js/2.608535c9.chunk.js",
-    "static/css/main.4dbe9db1.chunk.css",
+    "static/css/main.d69ac9fb.chunk.css",
     "static/js/main.86918754.chunk.js"
   ]
 }
