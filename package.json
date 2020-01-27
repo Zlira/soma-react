@@ -1,7 +1,7 @@
 {
   "name": "soma-react",
   "version": "0.1.0",
-  "homepage": "https://zlira.github.io/soma-react/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -18,7 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build",
+    "deploy:prod": "npm run build && echo 'soma.red' > ./build/CNAME && gh-pages -d build --no-history -r https://github.com/somalviv/soma.red.git"
   },
   "eslintConfig": {
     "extends": "react-app"
