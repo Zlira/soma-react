@@ -11,16 +11,25 @@ import heartImg from "./imgs/serce.svg";
 
 import "./About.css";
 
-function SiteDescription() {
+function SiteDescription({ close }) {
   return (
-    <div className="site-description">
+    <div className="site-description position-relative">
+      <button
+        type="button"
+        className="close position-sticky d-sm-none"
+        aria-label="Close"
+        onClick={close}
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
       <div className="col-1 baner-col"></div>
       <div className="row">
         <p className="col-md-4 text-uppercase mb-5 ">
           танцююча спільнота самосвідомих та&nbsp;активних громадян_ок
         </p>
         <p className="col-md-4 text-uppercase mb-5">
-          альтернативне дозвілля, в&nbsp;основі якого експеримент та&nbsp;практики рівності
+          альтернативне дозвілля, в&nbsp;основі якого експеримент
+          та&nbsp;практики рівності
         </p>
       </div>
       <div className="row">
@@ -33,12 +42,13 @@ function SiteDescription() {
         </p>
 
         <p className="col-md-8">
-          Soma. майстерня – це відкрите експериментальне та продуктивне мистецьке
-          середовище, що існує в контексті міста. Бачимо своєю місією створити
-          нову культуру тілесності, в центрі якої будуть права людини та вільне
-          дослідження. Нам близькі питання тіла в урбаністичному середовищі та
-          DIY культура. Основні напрямки діяльності майстерні – дослідження в
-          сучасному танці, перформансі, дизайні, та експериментальний самвидав.
+          Soma. майстерня – це відкрите експериментальне та продуктивне
+          мистецьке середовище, що існує в контексті міста. Бачимо своєю місією
+          створити нову культуру тілесності, в центрі якої будуть права людини
+          та вільне дослідження. Нам близькі питання тіла в урбаністичному
+          середовищі та DIY культура. Основні напрямки діяльності майстерні –
+          дослідження в сучасному танці, перформансі, дизайні, та
+          експериментальний самвидав.
         </p>
       </div>
     </div>
@@ -48,14 +58,19 @@ function SiteDescription() {
 function Button({ text, link, className }) {
   className = className || "";
   const classes = [
-    'heart-button',
-    'd-flex',
-    'align-items-center',
-    'justify-content-between',
-    className,
-  ].join(' ')
+    "heart-button",
+    "d-flex",
+    "align-items-center",
+    "justify-content-between",
+    className
+  ].join(" ");
   return (
-    <a href={link} className={classes} target="_blank" rel="noopener noreferrer">
+    <a
+      href={link}
+      className={classes}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <span className="heart-button-text">{text}</span>
       <img src={heartImg} alt={text} />
     </a>
@@ -149,7 +164,7 @@ export default function About() {
       <Collapse in={descriptionVisible}>
         <div className="row justify-content-end">
           <div className="site-description-container col-12 col-md-11">
-            <SiteDescription />
+            <SiteDescription close={() => setDescriptionVisible(false)} />
           </div>
         </div>
       </Collapse>

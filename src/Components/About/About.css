@@ -128,10 +128,10 @@
   font-size: 1.5rem;
 }
 
-.heart-button-text, .what-is-it {
+.heart-button-text,
+.what-is-it {
   margin-left: 20%;
 }
-
 
 .heart-button:hover,
 .heart-button-text:hover {
@@ -179,6 +179,15 @@
   color: white;
   padding: 20px 40px;
   min-height: calc((100vh - 89px) * 0.35);
+}
+
+.site-description button {
+  float: none;
+  left: 100%;
+  top: 10%;
+  z-index: 1;
+  text-shadow: none;
+  font-size: 1.7rem;
 }
 
 @media only screen and (max-width: 960px) {
@@ -230,8 +239,8 @@
     margin-right: 15%;
   }
 
-  .heart-button-text, .what-is-it {
+  .heart-button-text,
+  .what-is-it {
     margin-left: 15%;
   }
-
 }
