@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53cef3e383b68f6461ea1b67ef88d208",
+    "revision": "e257b9bef6fa305f5a6dd3aefba0ffe9",
     "url": "./index.html"
   },
   {
-    "revision": "5a860b65ec037bd80e2e",
-    "url": "./static/css/main.05a1c277.chunk.css"
+    "revision": "c95922f7c4b856913128",
+    "url": "./static/css/main.d9c27bf5.chunk.css"
   },
   {
     "revision": "27a2371e0a7024d39323",
     "url": "./static/js/2.608535c9.chunk.js"
   },
   {
-    "revision": "5a860b65ec037bd80e2e",
-    "url": "./static/js/main.abe722c3.chunk.js"
+    "revision": "c95922f7c4b856913128",
+    "url": "./static/js/main.4f4164d4.chunk.js"
   },
   {
     "revision": "7d6202e2464fe730b277",
@@ -24,16 +24,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/3kovtky.5c90b60d.png"
   },
   {
-    "revision": "5d815e33322419bdffb7edb67db9e7c4",
-    "url": "./static/media/a.5d815e33.svg"
+    "revision": "0b4c1b2188c79ac283cb50130717903d",
+    "url": "./static/media/a.0b4c1b21.svg"
   },
   {
     "revision": "de270df33a7a4fe573479925132827ba",
     "url": "./static/media/kristina.de270df3.jpg"
   },
   {
-    "revision": "9341d2117083e1548ba17b03a38e7083",
-    "url": "./static/media/kruzhok.9341d211.svg"
+    "revision": "5d3846e0e41b21352c70af12be904ad2",
+    "url": "./static/media/kruzhok.5d3846e0.svg"
   },
   {
     "revision": "8769165350e767cd294bb49b38359da0",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/lude.56fbdf44.jpg"
   },
   {
-    "revision": "5319eb6a6d2dcd0868c708537db2f4a5",
-    "url": "./static/media/m.5319eb6a.svg"
+    "revision": "6d367ec6964e87ed7c2f5c795b9d99d5",
+    "url": "./static/media/m.6d367ec6.svg"
   },
   {
     "revision": "4f1134d23ac8fe6fddd6e1aa0dc27a53",
@@ -60,32 +60,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/mega.c62efdc0.png"
   },
   {
-    "revision": "e001db0837bb757027fa69a30cef0df4",
-    "url": "./static/media/menu-24px.e001db08.svg"
+    "revision": "f7ee666b486d759717ac537645c011b0",
+    "url": "./static/media/menu-24px.f7ee666b.svg"
   },
   {
-    "revision": "7b14e59566a193c12670752f15691c64",
-    "url": "./static/media/o.7b14e595.svg"
+    "revision": "d43e36f79f1dcac726b5699ed923b8d3",
+    "url": "./static/media/o.d43e36f7.svg"
   },
   {
     "revision": "7ecaac660a3e9c9db2f9bddad97f9359",
     "url": "./static/media/olha.7ecaac66.jpg"
   },
   {
-    "revision": "beaf1268e38379be54c7e2a456c9114b",
-    "url": "./static/media/palychka.beaf1268.svg"
+    "revision": "c6de8992e6bd73b2cb3fa9f157512119",
+    "url": "./static/media/palychka.c6de8992.svg"
   },
   {
-    "revision": "6ad8f47e84a85325c7c636cf55f94af7",
-    "url": "./static/media/s.6ad8f47e.svg"
+    "revision": "7ed1d8ac6396681b8e0be86f33de3441",
+    "url": "./static/media/s.7ed1d8ac.svg"
   },
   {
-    "revision": "e75ce8875a8d98647271c8de0cb321e8",
-    "url": "./static/media/serce.e75ce887.svg"
+    "revision": "9e551de98f0853738c08e2fb9118d309",
+    "url": "./static/media/serce.9e551de9.svg"
   },
   {
-    "revision": "bbcc7ebd0ddfea7741976407462038f1",
-    "url": "./static/media/soma_banerok.bbcc7ebd.svg"
+    "revision": "85b14cd998862031db5b45447dc4404b",
+    "url": "./static/media/soma_banerok.85b14cd9.svg"
   },
   {
     "revision": "cd799906bbbc3831b19d60b024254857",
