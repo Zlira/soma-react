@@ -44,10 +44,10 @@ function SocialMediaLink(props) {
 
 function SiteNavigation() {
   const navItems = [
-    { href: "announcements", text: "анонси" },
-    { href: "participation", text: "участь" },
+    // { href: "announcements", text: "анонси" },
+    // { href: "participation", text: "участь" },
     { href: "calendar", text: "публічні події" },
-    { href: "staff", text: "колектив" },
+    // { href: "staff", text: "колектив" },
     {
       href: "contacts",
       text: "контакти",

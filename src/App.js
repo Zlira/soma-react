@@ -16,10 +16,10 @@ function App() {
         <About />
       </div>
       <div className="site container">
-        <Announcements />
-        <Participation />
+        {/*<Announcements /> */}
+        {/* <Participation /> */}
         <CalendarWrapped />
-        <Staff />
+        {/* <Staff /> */}
         <Contacts />
       </div>
     </>
