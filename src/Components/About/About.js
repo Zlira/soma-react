@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Collapse from "react-bootstrap/Collapse";
+import { Link } from "react-scroll";
 
 import { LetterS, LetterO, LetterM, LetterA } from "./SomaLetters.js";
 
@@ -20,7 +21,8 @@ function SiteDescription() {
           танцююча спільнота самосвідомих та&nbsp;активних громадян_ок
         </p>
         <p className="col-md-4 text-uppercase mb-5">
-          альтернативне дозвілля, в&nbsp;основі якого експеримент та&nbsp;практики рівності
+          альтернативне дозвілля, в&nbsp;основі якого експеримент
+          та&nbsp;практики рівності
         </p>
       </div>
       <div className="row">
@@ -33,12 +35,17 @@ function SiteDescription() {
         </p>
 
         <p className="col-md-8">
-          Soma. майстерня – це відкрите експериментальне та продуктивне мистецьке
-          середовище, що існує в контексті міста. Бачимо своєю місією створити
-          нову культуру тілесності, в центрі якої будуть права людини та вільне
-          дослідження. Нам близькі питання тіла в урбаністичному середовищі та
-          DIY культура. Основні напрямки діяльності майстерні – дослідження в
-          сучасному танці, перформансі, дизайні, та експериментальний самвидав.
+          Soma.майстерня – це відкрите експериментальне та продуктивне мистецьке
+          середовище, що існує в контексті міста. Бачимо своєю місією створення
+          та підтримку культури тілесності, в центрі якої права людини та вільне
+          дослідження. Нам близькі питання тіла в створеному людиною середовищі
+          та DIY культура. Основні напрямки діяльності – дослідження в танці,
+          перформансі, музиці, та експериментальний самвидав.
+        </p>
+        <p className="col-md-8">
+          Ми працюємо як вільний простір для праці і дослідження для учасників
+          та учасниць майстерні, а також проводимо воркшопи, регулярні класи,
+          джеми, концерти, вечірки, лекції та бесіди.
         </p>
       </div>
     </div>
@@ -48,14 +55,19 @@ function SiteDescription() {
 function Button({ text, link, className }) {
   className = className || "";
   const classes = [
-    'heart-button',
-    'd-flex',
-    'align-items-center',
-    'justify-content-between',
+    "heart-button",
+    "d-flex",
+    "align-items-center",
+    "justify-content-between",
     className,
-  ].join(' ')
+  ].join(" ");
   return (
-    <a href={link} className={classes} target="_blank" rel="noopener noreferrer">
+    <a
+      href={link}
+      className={classes}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <span className="heart-button-text">{text}</span>
       <img src={heartImg} alt={text} />
     </a>
@@ -68,7 +80,7 @@ function Marquee() {
     "галицький квір",
     "diy",
     "дизайн-рух",
-    "практики рівності"
+    "практики рівності",
   ];
   const eventELements = events.map((event, index) => (
     <React.Fragment key={index}>
@@ -103,7 +115,7 @@ function CenterCol({ children }) {
     "d-flex",
     "flex-column",
     "align-items-center",
-    "justify-content-end"
+    "justify-content-end",
   ];
   return col(classes, children);
 }
@@ -116,13 +128,14 @@ function RightCol({ children }) {
     "flex-column",
     "col-6",
     "align-items-center",
-    "justify-content-end"
+    "justify-content-end",
   ];
   return col(classes, children);
 }
 
 export default function About() {
   let [descriptionVisible, setDescriptionVisible] = useState(false);
+  const donateLink = "https://privatbank.ua/sendmoney?payment=d16abaeedd";
   return (
     <section id="home" className="entry">
       <div className="row no-gutters what-is-it-row">
@@ -169,11 +182,13 @@ export default function About() {
       </Collapse>
       <div className="row no-gutters come-row justify-content-end">
         <LeftCol>
-          <Button
-            text="прийти"
-            className="heart-button-come"
-            link="https://forms.gle/TBfYPvjDfvb1cb59A"
-          />
+          <Link to="calendar" smooth offset={-60}>
+            <Button
+              text="прийти"
+              className="heart-button-come"
+              link="#calendar"
+            />
+          </Link>
         </LeftCol>
         <CenterCol></CenterCol>
         <RightCol></RightCol>
@@ -183,7 +198,7 @@ export default function About() {
           <Button
             text="donate"
             className="heart-button-donate"
-            link="https://privatbank.ua/sendmoney?payment=a101e4603b"
+            link={donateLink}
           />
         </LeftCol>
         <CenterCol>
