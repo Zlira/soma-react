@@ -13,11 +13,6 @@ function Mail({ link, mail }) {
   return <a href={link}>{mail}</a>;
 }
 
-function PhoneNum(props) {
-  const { link, number } = props;
-  return <a href={link}>{number}</a>;
-}
-
 function Map({ link }) {
   return (
     <iframe
@@ -51,7 +46,6 @@ function Contacts() {
               link="mailto:soma.lviv@gmail.com"
               mail="soma.lviv@gmail.com"
             />
-            <PhoneNum link="tel:+380689595582" number="068 959 5582" />
           </p>
         </div>
         <div className="col-12 col-md-6">
