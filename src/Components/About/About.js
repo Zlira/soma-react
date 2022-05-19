@@ -135,7 +135,7 @@ function RightCol({ children }) {
 
 export default function About() {
   let [descriptionVisible, setDescriptionVisible] = useState(false);
-  const donateLink = "https://privatbank.ua/sendmoney?payment=d16abaeedd";
+  const donateLink = "https://send.monobank.ua/A39bAcoAE8";
   return (
     <section id="home" className="entry">
       <div className="row no-gutters what-is-it-row">
